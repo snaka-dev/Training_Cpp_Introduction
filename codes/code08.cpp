@@ -21,13 +21,13 @@ public:
 
     bool displayDouble()
     {
-        std::cout << typeName_ << value_ << " ‚Ì2”{‚Í " << makeDouble() << " ‚Å‚·B" << std::endl; 
+        std::cout << typeName_ << value_ << " ã®2å€ã¯ " << makeDouble() << " ã§ã™ã€‚" << std::endl; 
         std::cout << std::endl;
     };
 
     bool read()
     {
-        std::cout << typeName_ << " ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+        std::cout << typeName_ << " ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" << std::endl;
         std::cin >> value_;
     };
 };
@@ -35,15 +35,15 @@ public:
 
 int main()
 {
-        extendedType<int> extInt("®”");
+        extendedType<int> extInt("æ•´æ•°");
         extInt.read();
         extInt.displayDouble();
     
-        extendedType<float> extFlt("À”");
+        extendedType<float> extFlt("å®Ÿæ•°");
         extFlt.read();
         extFlt.displayDouble();
     
-        extendedType<std::string> extStr("•¶š—ñ");
+        extendedType<std::string> extStr("æ–‡å­—åˆ—");
         extStr.read();
         extStr.displayDouble();
 }
