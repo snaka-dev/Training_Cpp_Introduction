@@ -21,13 +21,13 @@ public:
 
     bool displayDouble()
     {
-        std::cout << typeName_ <<": " << value_ << " ‚Ì2”{‚Í " << makeDouble() << " ‚Å‚·B" << std::endl; 
+        std::cout << typeName_ <<": " << value_ << " ã®2å€ã¯ " << makeDouble() << " ã§ã™ã€‚" << std::endl; 
         std::cout << std::endl;
     };
 
     bool read()
     {
-        std::cout << typeName_ << " ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+        std::cout << typeName_ << " ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" << std::endl;
         std::cin >> value_;
     };
 
@@ -52,15 +52,15 @@ public:
 
 int main()
 {
-    extendedType<int> extInt01("®”A");
+    extendedType<int> extInt01("æ•´æ•°A");
     extInt01.read();
     extInt01.displayDouble();
 
-    extendedType<int> extInt02("®”B");
+    extendedType<int> extInt02("æ•´æ•°B");
     extInt02.read();
     extInt02.displayDouble();
 
-    std::cout << "Šg’£®”A‚ÆŠg’£®”B‚Æ‚Ì˜au+v" << std::endl;
+    std::cout << "æ‹¡å¼µæ•´æ•°Aã¨æ‹¡å¼µæ•´æ•°Bã¨ã®å’Œã€Œ+ã€" << std::endl;
     extInt01 = extInt01+extInt02 ;
     extInt01.display();
     extInt01.displayDouble();

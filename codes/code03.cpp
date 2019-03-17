@@ -1,6 +1,6 @@
 #include <iostream>
     
-// ƒNƒ‰ƒX‚Ì’è‹`@ƒXƒ^[ƒg
+// ã‚¯ãƒ©ã‚¹ã®å®šç¾©ã€€ã‚¹ã‚¿ãƒ¼ãƒˆ
 class extendedInt
 {
     public:
@@ -10,16 +10,16 @@ class extendedInt
             return n + n ;
         };
 };
-// ƒNƒ‰ƒX‚Ì’è‹`@‚±‚±‚Ü‚Å
+// ã‚¯ãƒ©ã‚¹ã®å®šç¾©ã€€ã“ã“ã¾ã§
     
 int main()
 {
     int n;
     extendedInt extInt;
 
-    std::cout << "®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+    std::cout << "æ•´æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" << std::endl;
     std::cin >> n;
-    std::cout << "®” " << n << " ‚Ì2”{‚Í " << extInt.makeDouble(n) << " ‚Å‚·B" << std::endl; 
+    std::cout << "æ•´æ•° " << n << " ã®2å€ã¯ " << extInt.makeDouble(n) << " ã§ã™ã€‚" << std::endl; 
 
     return 0;
 }

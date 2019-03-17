@@ -19,7 +19,7 @@ public:
 
     bool displayDouble()
     {
-        std::cout << "®” " << n_ << " ‚Ì2”{‚Í " << makeDouble() << " ‚Å‚·B" << std::endl;
+        std::cout << "æ•´æ•° " << n_ << " ã®2å€ã¯ " << makeDouble() << " ã§ã™ã€‚" << std::endl;
         std::cout << std::endl;
     }
 };
@@ -28,7 +28,7 @@ int main()
 {
     int n;
 
-    std::cout << "®”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+    std::cout << "æ•´æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" << std::endl;
     std::cin >> n;
 
     extendedInt extInt(n); 

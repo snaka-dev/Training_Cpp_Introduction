@@ -9,9 +9,9 @@ int makeDouble(const int& n)
 int main()
 {
     int n;
-    std::cout << "®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+    std::cout << "æ•´æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" << std::endl;
     std::cin >> n;
-    std::cout << "®” " << n << " ‚Ì2”{‚Í " << makeDouble(n) << " ‚Å‚·B" << std::endl; 
+    std::cout << "æ•´æ•° " << n << " ã®2å€ã¯ " << makeDouble(n) << " ã§ã™ã€‚" << std::endl; 
 
      return 0;
 }

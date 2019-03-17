@@ -21,13 +21,13 @@ public:
 
     bool displayDouble()
     {
-        std::cout << typeName_ << value_ << " ‚Ì2”{‚Í " << makeDouble() << " ‚Å‚·B" << std::endl; 
+        std::cout << typeName_ << value_ << " ã®2å€ã¯ " << makeDouble() << " ã§ã™ã€‚" << std::endl; 
         std::cout << std::endl;
     };
 
     bool read()
     {
-        std::cout << typeName_ << " ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+        std::cout << typeName_ << " ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" << std::endl;
         std::cin >> value_;
     };
 };
@@ -35,14 +35,14 @@ public:
 
 int main()
 {
-    // template ‚ğ int ‚Æ‚µ‚ÄextendedTypeƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ¶¬
-    extendedType<int> extInt("®”");
+    // template ã‚’ int ã¨ã—ã¦extendedTypeã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆ
+    extendedType<int> extInt("æ•´æ•°");
 
     extInt.read();
     extInt.displayDouble();
 
-    // template ‚ğ float ‚Æ‚µ‚ÄextendedTypeƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ¶¬
-    extendedType<float> extFlt("À”");
+    // template ã‚’ float ã¨ã—ã¦extendedTypeã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆ
+    extendedType<float> extFlt("å®Ÿæ•°");
 
     extFlt.read();
     extFlt.displayDouble();

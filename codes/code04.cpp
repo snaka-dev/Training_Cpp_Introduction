@@ -1,6 +1,6 @@
 #include <iostream>
     
-// ƒNƒ‰ƒX‚Ì’è‹`@ƒXƒ^[ƒg
+// ã‚¯ãƒ©ã‚¹ã®å®šç¾©ã€€ã‚¹ã‚¿ãƒ¼ãƒˆ
 class extendedInt
 {
     int n_;
@@ -14,18 +14,18 @@ class extendedInt
 
         bool displayDouble()
         {
-            std::cout << "®” " << n_ << " ‚Ì2”{‚Í " << makeDouble() << " ‚Å‚·B" << std::endl;
+            std::cout << "æ•´æ•° " << n_ << " ã®2å€ã¯ " << makeDouble() << " ã§ã™ã€‚" << std::endl;
             std::cout << std::endl;
         }
 
         bool read()
         {
-            std::cout <<  " ®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+            std::cout <<  " æ•´æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" << std::endl;
             std::cin >> n_;
             std::cout << std::endl;
         };
 };
-// ƒNƒ‰ƒX‚Ì’è‹`@‚±‚±‚Ü‚Å
+// ã‚¯ãƒ©ã‚¹ã®å®šç¾©ã€€ã“ã“ã¾ã§
     
 int main()
 {

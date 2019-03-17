@@ -1,6 +1,6 @@
 #include <iostream>
 
-// ®”ê—pƒNƒ‰ƒX
+// æ•´æ•°å°‚ç”¨ã‚¯ãƒ©ã‚¹
 class extendedInt
 {
     int n_;
@@ -14,18 +14,18 @@ public:
 
     bool displayDouble()
     {
-        std::cout << "®” " << n_ << " ‚Ì2”{‚Í " << makeDouble() << " ‚Å‚·B" << std::endl; 
+        std::cout << "æ•´æ•° " << n_ << " ã®2å€ã¯ " << makeDouble() << " ã§ã™ã€‚" << std::endl; 
         std::cout << std::endl;
     };
 
     bool read()
     {
-        std::cout << "®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+        std::cout << "æ•´æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" << std::endl;
         std::cin >> n_;
     };
 };
 
-// À”ê—pƒNƒ‰ƒX
+// å®Ÿæ•°å°‚ç”¨ã‚¯ãƒ©ã‚¹
 class extendedFloat
 {
     float f_;
@@ -39,12 +39,12 @@ public:
 
     bool displayDouble()
     {
-        std::cout << "À” " << f_ << " ‚Ì2”{‚Í " << makeDouble() << " ‚Å‚·B" << std::endl; 
+        std::cout << "å®Ÿæ•° " << f_ << " ã®2å€ã¯ " << makeDouble() << " ã§ã™ã€‚" << std::endl; 
     };
 
     bool read()
     {
-        std::cout << "À”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" << std::endl;
+        std::cout << "å®Ÿæ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" << std::endl;
         std::cin >> f_;
     };
 };
