@@ -10,20 +10,20 @@ class extendedInt
         int makeDouble()
         {
             return n_ + n_ ;
-        };
+        }
 
-        bool displayDouble()
+        void displayDouble()
         {
             std::cout << "整数 " << n_ << " の2倍は " << makeDouble() << " です。" << std::endl;
             std::cout << std::endl;
         }
 
-        bool read()
+        void read()
         {
             std::cout <<  " 整数を入力してください。" << std::endl;
             std::cin >> n_;
             std::cout << std::endl;
-        };
+        }
 };
 // クラスの定義　ここまで
     

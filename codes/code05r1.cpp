@@ -11,25 +11,25 @@ public:
 
     int makeDouble();
 
-    bool displayDouble();
+    void displayDouble();
 };
 
 //定義はこちらに
 extendedInt::extendedInt(const int& n )
 {
     n_ = n;
-};
+}
 
 int extendedInt::makeDouble()
 {
     return n_ + n_;
-};
+}
 
-bool extendedInt::displayDouble()
+void extendedInt::displayDouble()
 {
     std::cout << "整数 " << n_ << " の2倍は " << makeDouble() << " です。" << std::endl;
     std::cout << std::endl;
-};
+}
 
 
 int main()

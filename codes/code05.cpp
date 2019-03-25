@@ -10,14 +10,14 @@ public:
     extendedInt(const int& n )
     {
         n_ = n;
-    };
+    }
 
     int makeDouble()
     {
         return n_ + n_;
-    };
+    }
 
-    bool displayDouble()
+    void displayDouble()
     {
         std::cout << "整数 " << n_ << " の2倍は " << makeDouble() << " です。" << std::endl;
         std::cout << std::endl;

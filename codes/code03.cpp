@@ -8,7 +8,7 @@ class extendedInt
         int makeDouble(const int& n)
         {
             return n + n ;
-        };
+        }
 };
 // クラスの定義　ここまで
     

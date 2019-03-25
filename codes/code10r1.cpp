@@ -12,8 +12,18 @@ protected:  // this will be accesible from child-class.
 
 public:
 
+    // added default constructor
+    extendedType()
+    :
+    typeName_("noTypeSpecifiedYet")
+    {
+        std::cout << "Default constructor: test message from extendedType constructor!" << std::endl;
+    }
+
+
     extendedType(const std::string& type)
     {
+        std::cout << "test message from extendedType constructor!" << std::endl;
         typeName_=type;
     }
 
@@ -62,15 +72,24 @@ class namedExtendedType
     std::string instanceName_;
 
 public:
+    namedExtendedType()
+    :
+        extendedType<Type>()
+    {
+    }
 
-    // Step 1
     namedExtendedType(const std::string& type)
     :
         extendedType<Type>(type)
     {
     }
 
-    // step 2
+    // Added. 
+    void setTypeName(const std::string& tName_)
+    {
+        this->typeName_ = tName_;
+    }
+
     void setInstanceName(const std::string& name_)
     {
         instanceName_ = name_;
@@ -97,10 +116,11 @@ public:
 int main()
 {
     //extendedType<int> extInt01("整数A");
-    namedExtendedType<int> extInt01("整数A");
+    namedExtendedType<int> extInt01; // use default constructor
+    extInt01.setTypeName("整数");
     extInt01.read();
-    extInt01.displayDouble();
     extInt01.setInstanceName("FirstInt");
+    extInt01.displayDouble();
     extInt01.display();
 
     namedExtendedType<int> extInt02("整数B");

@@ -10,19 +10,19 @@ public:
     int makeDouble()
     {
         return n_ + n_;
-    };
+    }
 
-    bool displayDouble()
+    void displayDouble()
     {
         std::cout << "整数 " << n_ << " の2倍は " << makeDouble() << " です。" << std::endl; 
         std::cout << std::endl;
-    };
+    }
 
-    bool read()
+    void read()
     {
         std::cout << "整数を入力してください。" << std::endl;
         std::cin >> n_;
-    };
+    }
 };
 
 // 実数専用クラス
@@ -35,18 +35,18 @@ public:
     float makeDouble()
     {
         return f_ + f_;
-    };
+    }
 
-    bool displayDouble()
+    void displayDouble()
     {
         std::cout << "実数 " << f_ << " の2倍は " << makeDouble() << " です。" << std::endl; 
-    };
+    }
 
-    bool read()
+    void read()
     {
         std::cout << "実数を入力してください。" << std::endl;
         std::cin >> f_;
-    };
+    }
 };
 
 int main()

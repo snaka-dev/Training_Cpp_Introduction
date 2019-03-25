@@ -17,26 +17,26 @@ public:
     Type makeDouble()
     {
         return value_ + value_;
-    };
+    }
 
-    bool displayDouble()
+    void displayDouble()
     {
         std::cout << typeName_ <<": " << value_ << " の2倍は " << makeDouble() << " です。" << std::endl; 
         std::cout << std::endl;
-    };
+    }
 
-    bool read()
+    void read()
     {
         std::cout << typeName_ << " を入力してください。" << std::endl;
         std::cin >> value_;
-    };
+    }
 
-    bool display()
+    void display()
     {
         std::cout << "typeName_ : " << typeName_ << std::endl;
         std::cout << "value_    : " << value_ << std::endl;
         std::cout << std::endl;
-    };
+    }
 
     //overload of operator
     const extendedType operator +(const extendedType obj) const

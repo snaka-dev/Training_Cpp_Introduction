@@ -4,7 +4,7 @@
 int makeDouble(const int& n)
 {
    return n + n ;
-};
+}
 
 int main()
 {
