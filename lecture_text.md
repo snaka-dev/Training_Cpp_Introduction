@@ -77,7 +77,7 @@ int main()
 int makeDouble(const int& n)
 {
    return n + n ;
-};
+}
 
 int main()
 {
@@ -113,7 +113,7 @@ class extendedInt
         int makeDouble(const int& n)
         {
             return n + n ;
-        };
+        }
 };
 // クラスの定義　ここまで
     
@@ -154,22 +154,22 @@ class extendedInt
         int makeDouble()
         {
             return n_ + n_ ;
-        };
+        }
 
         // 2倍の値を表示する。
-        bool displayDouble()
+        void displayDouble()
         {
             std::cout << "整数 " << n_ << " の2倍は " << makeDouble() << " です。" << std::endl;
             std::cout << std::endl;
         }
 
         // メンバ変数に格納する値を読み込む。
-        bool read()
+        void read()
         {
             std::cout <<  " 整数を入力してください。" << std::endl;
             std::cin >> n_;
             std::cout << std::endl;
-        };
+        }
 };
 // クラスの定義　ここまで
     
@@ -208,14 +208,14 @@ public:
     extendedInt(const int& n )
     {
         n_ = n;
-    };
+    }
 
     int makeDouble()
     {
         return n_ + n_;
-    };
+    }
 
-    bool displayDouble()
+    void displayDouble()
     {
         std::cout << "整数 " << n_ << " の2倍は " << makeDouble() << " です。" << std::endl;
         std::cout << std::endl;
@@ -263,25 +263,25 @@ public:
 
     int makeDouble();
 
-    bool displayDouble();
+    void displayDouble();
 };
 
 //定義はこちらに
 extendedInt::extendedInt(const int& n )
 {
     n_ = n;
-};
+}
 
 int extendedInt::makeDouble()
 {
     return n_ + n_;
-};
+}
 
-bool extendedInt::displayDouble()
+void extendedInt::displayDouble()
 {
     std::cout << "整数 " << n_ << " の2倍は " << makeDouble() << " です。" << std::endl;
     std::cout << std::endl;
-};
+}
 
 
 int main()
@@ -321,17 +321,17 @@ public:
         return n_ + n_;
     };
 
-    bool displayDouble()
+    void displayDouble()
     {
         std::cout << "整数 " << n_ << " の2倍は " << makeDouble() << " です。" << std::endl; 
         std::cout << std::endl;
-    };
+    }
 
-    bool read()
+    void read()
     {
         std::cout << "整数を入力してください。" << std::endl;
         std::cin >> n_;
-    };
+    }
 };
 
 // 実数専用クラス
@@ -344,18 +344,18 @@ public:
     float makeDouble()
     {
         return f_ + f_;
-    };
+    }
 
-    bool displayDouble()
+    void displayDouble()
     {
         std::cout << "実数 " << f_ << " の2倍は " << makeDouble() << " です。" << std::endl; 
-    };
+    }
 
-    bool read()
+    void read()
     {
         std::cout << "実数を入力してください。" << std::endl;
         std::cin >> f_;
-    };
+    }
 };
 
 int main()
@@ -399,19 +399,19 @@ public:
     Type makeDouble()
     {
         return value_ + value_;
-    };
-
-    bool displayDouble()
+    }
+    
+    void displayDouble()
     {
         std::cout << typeName_ << value_ << " の2倍は " << makeDouble() << " です。" << std::endl; 
         std::cout << std::endl;
-    };
+    }
 
-    bool read()
+    void read()
     {
         std::cout << typeName_ << " を入力してください。" << std::endl;
         std::cin >> value_;
-    };
+    }
 };
 
 
@@ -463,19 +463,19 @@ public:
     Type makeDouble()
     {
         return value_ + value_;
-    };
-
-    bool displayDouble()
+    }
+    
+    void displayDouble()
     {
         std::cout << typeName_ << value_ << " の2倍は " << makeDouble() << " です。" << std::endl; 
         std::cout << std::endl;
-    };
+    }
 
-    bool read()
+    void read()
     {
         std::cout << typeName_ << " を入力してください。" << std::endl;
         std::cin >> value_;
-    };
+    }
 };
 
 
@@ -519,26 +519,26 @@ public:
     Type makeDouble()
     {
         return value_ + value_;
-    };
+    }
 
-    bool displayDouble()
+    void displayDouble()
     {
         std::cout << typeName_ <<": " << value_ << " の2倍は " << makeDouble() << " です。" << std::endl; 
         std::cout << std::endl;
-    };
+    }
 
-    bool read()
+    void read()
     {
         std::cout << typeName_ << " を入力してください。" << std::endl;
         std::cin >> value_;
-    };
+    }
 
-    bool display()
+    void display()
     {
         std::cout << "typeName_ : " << typeName_ << std::endl;
         std::cout << "value_    : " << value_ << std::endl;
         std::cout << std::endl;
-    };
+    }
 
     //overload of operator "+"
     const extendedType operator +(const extendedType obj) const
@@ -604,26 +604,26 @@ public:
     Type makeDouble()
     {
         return value_ + value_;
-    };
-
-    bool displayDouble()
+    }
+    
+    void displayDouble()
     {
         std::cout << typeName_ <<": " << value_ << " の2倍は " << makeDouble() << " です。" << std::endl; 
         std::cout << std::endl;
-    };
+    }
 
-    bool read()
+    void read()
     {
         std::cout << typeName_ << " を入力してください。" << std::endl;
         std::cin >> value_;
-    };
+    }
 
-    bool display()
+    void display()
     {
         std::cout << "typeName_ : " << typeName_ << std::endl;
         std::cout << "value_    : " << value_ << std::endl;
         std::cout << std::endl;
-    };
+    }
 
     //overload of operator
     const extendedType operator +(const extendedType obj) const
@@ -660,7 +660,7 @@ public:
         instanceName_ = name_;
     }
 
-    bool display()
+    void display()
     {
         std::cout << "instanceName_ : " << instanceName_ << std::endl;
         extendedType<Type>::display();
